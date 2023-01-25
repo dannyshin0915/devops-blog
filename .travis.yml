@@ -1,9 +1,9 @@
 language: go
 go:
-  - 1.11.x
+  - 1.18.x
 
 install:
-  - go get github.com/gohugoio/hugo
+  - go install -tags extended github.com/gohugoio/hugo
   
 script:
   - mkdir -p themes/beautifulhugo && git clone https://GitHub.com/halogenica/beautifulhugo.git themes/beautifulhugo
