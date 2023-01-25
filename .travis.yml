@@ -3,7 +3,7 @@ go:
   - 1.18.x
 
 install:
-  - go install -tags extended github.com/gohugoio/hugo
+  - go install -tags extended github.com/gohugoio/hugo@latest
   
 script:
   - mkdir -p themes/beautifulhugo && git clone https://GitHub.com/halogenica/beautifulhugo.git themes/beautifulhugo
